@@ -1,0 +1,63 @@
+package application;
+
+import javafx.scene.paint.Color;
+
+enum MyColor {
+	BLACK(0,0,0),
+	ALICEBLUE(240,248,255),
+	LAVENDER(230,230,250),
+	MISTYROSE(255,228,225),
+	AZURE(240,255,255),
+	PEACHPUFF(255,218,185),
+	CRIMSON(220,20,60),
+	PALETURQUOISE(175,238,238),
+	LIGHTPINK(255,182,193),
+	TOMATO(255,99,71),
+	KHAKI(240,230,140),
+	CORNFLOWERBLUE(100,149,237),
+	THISTLE(216,191,216),
+	ROSYBROWN(188,143,143),
+	HONEYDEW(240,255,240),
+	MINTCREAM(245,255,250),
+	INDIANRED(205, 92, 92),
+	LIGHTCORAL(240, 128, 128),
+	SALMON(250, 128, 114),
+	DARKSALMON(233, 150, 122),
+	LIGHTSALMON(255, 160, 122),
+	FIREBRICK(178, 34, 34),
+	DARKRED(139, 0, 0),
+	MEDIUMVIOLETRED(199, 21, 133),
+	PALEVIOLETRED(219, 112, 147),
+	MEDIUMORCHID(186, 85, 211),
+	MEDIUMPURPLE(147, 112, 219),
+	REBECCAPURPLE(102, 51, 153),
+	BLUEVIOLET(138, 43, 226),
+	DARKVIOLET(148, 0, 211),
+	DARKORCHID(153, 50, 204),
+	DARKMAGENTA(139, 0, 139),
+	PURPLE(128, 0, 128),
+	INDIGO(75, 0, 130),
+	SLATEBLUE(106, 90, 205),
+	DARKSLATEBLUE(72, 61, 139),
+	MEDIUMSLATEBLUE(123, 104, 238),
+	BISQUE(255,228,196);
+	
+	//Variables
+	private int r,g,b;
+	
+	MyColor(int r, int g, int b) {
+		this.r = r;
+		this.g = g;
+		this.b = b;
+		
+	}
+	
+	public Color setColor() {
+		return Color.rgb(r, g, b);
+	}
+	
+	public static MyColor[] getMyColors() {
+		return MyColor.values();
+	}
+
+}
